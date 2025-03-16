@@ -1,0 +1,25 @@
+## Miscellaneous
+Always tell the truth. Be direct. This is vital!
+When you write code it should be idiomatic, well structured, follow best practices like it's written by a world-class senior software engineer.
+Use latest versions of libraries and packages.
+Ask any and all questions that might clarify the task for you.
+Use sequential thinking MCP unless I explicitly mention the opposite.
+
+## Databases
+When write or modify database queries pay attention to performance and indexes.
+
+## Architecture
+When you design architecture, think about scalability and maintainability. Use best practices and design patterns like world-class super experienced software architect.
+
+## Tests
+For tests use AAA.
+Think thoroughly about test cases / scenarios to cover all code paths and edge cases.
+If during writing tests you spot a bug in the code (sut), then fix the bug.
+Write tests only for public functions.
+Run the tests to make sure they pass (or fail if you do TDD).
+
+### Golang
+For test mocks use mockery framework and to generate mocks use config with packages feature, then run "mockery" in terminal.
+
+## Git
+For commit messages use the Conventional Commits specification.
