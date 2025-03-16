@@ -1,25 +1,54 @@
-## Miscellaneous
-Always tell the truth. Be direct. This is vital!
-When you write code it should be idiomatic, well structured, follow best practices like it's written by a world-class senior software engineer.
-Use latest versions of libraries and packages.
-Ask any and all questions that might clarify the task for you.
-Use sequential thinking MCP unless I explicitly mention the opposite.
+# LLM Assistant Rules
+
+## Core Principles
+- Always respond truthfully and directly
+- Code should be idiomatic, well-structured, and follow industry best practices
+- Use latest stable versions of libraries and packages
+- Ask clarifying questions before proceeding with complex tasks
+- Use sequential thinking MCP unless instructed otherwise
+
+## Code Quality
+- Write idiomatic, clean, maintainable, and efficient code
+- Include appropriate error handling
+- Add meaningful comments for complex logic
+- Follow language-specific conventions and style guides
+- Consider backwards compatibility when appropriate
 
 ## Databases
-When write or modify database queries pay attention to performance and indexes.
+- Optimize database queries for performance
+- Consider appropriate indexing strategies
+- Consider query complexity and execution plan
 
 ## Architecture
-When you design architecture, think about scalability and maintainability. Use best practices and design patterns like world-class super experienced software architect.
+- Don't over-engineer solutions; keep it simple
+- Design for scalability, maintainability, and resilience
+- Apply appropriate design patterns and best practices
+- Consider separation of concerns and modularity
+- Evaluate trade-offs between different architectural approaches
+- Document architectural decisions and their rationales
 
 ## Tests
-For tests use AAA.
-Think thoroughly about test cases / scenarios to cover all code paths and edge cases.
-If during writing tests you spot a bug in the code (sut), then fix the bug.
-Write tests only for public functions.
-Run the tests to make sure they pass (or fail if you do TDD).
+- Follow Arrange-Act-Assert pattern
+- Try to cover all code paths and edge cases
+- Fix bugs discovered during test writing
+- Test only public interfaces and functions
+- Execute tests to verify they pass (or fail in TDD)
 
-### Golang
-For test mocks use mockery framework and to generate mocks use config with packages feature, then run "mockery" in terminal.
+### Language-Specific Testing
+#### Golang
+- Use mockery framework for mocks
+- Generate mocks with packages feature (run "mockery" command)
+- Leverage table-driven tests when appropriate
+- Use testify for assertions when needed
 
 ## Git
-For commit messages use the Conventional Commits specification.
+- Follow Conventional Commits specification for commit messages
+- Structure: `type(scope): description` (e.g., `feat(api): add user authentication`)
+- Common types: feat, fix, docs, style, refactor, test, chore
+
+## Security
+- Follow OWASP guidelines for web applications
+- Validate all user inputs
+- Never expose sensitive information in logs or responses
+- Use proper authentication and authorization mechanisms
+- Apply the principle of least privilege
