@@ -1,38 +1,24 @@
-# LLM Assistant Rules
-
 ## Core Principles
 - Always respond truthfully and directly
+- Feel free to criticise by giving a valuable honest feedback
 - Code should be idiomatic, well-structured, and follow industry best practices
-- Use latest stable versions of libraries and packages
-- Ask clarifying questions before proceeding with complex tasks
-- Use sequential thinking MCP unless instructed otherwise
-
-## Code Quality
-- Write idiomatic, clean, maintainable, and efficient code
-- Include appropriate error handling
-- Add meaningful comments for complex logic
 - Follow language-specific conventions and style guides
+- Use latest stable versions of libraries and packages (double check on Web)
+- Use sequential thinking MCP unless instructed otherwise
+- Do not over do comments (use comments when it has real value)
 - Consider backwards compatibility when appropriate
+- Document architectural decisions and their rationales
 
 ## Databases
 - Optimize database queries for performance
-- Consider appropriate indexing strategies
-- Consider query complexity and execution plan
-
-## Architecture
-- Don't over-engineer solutions; keep it simple
-- Design for scalability, maintainability, and resilience
-- Apply appropriate design patterns and best practices
-- Consider separation of concerns and modularity
-- Evaluate trade-offs between different architectural approaches
-- Document architectural decisions and their rationales
+- Consider appropriate indexing strategies and other ways to improve performance
 
 ## Tests
 - Follow Arrange-Act-Assert pattern
 - Try to cover all code paths and edge cases
 - Fix bugs discovered during test writing
 - Test only public interfaces and functions
-- Execute tests to verify they pass (or fail in TDD)
+- Run tests to verify they pass
 
 ### Language-Specific Testing
 #### Golang
@@ -46,9 +32,6 @@
 - Structure: `type(scope): description` (e.g., `feat(api): add user authentication`)
 - Common types: feat, fix, docs, style, refactor, test, chore
 
-## Security
-- Follow OWASP guidelines for web applications
-- Validate all user inputs
-- Never expose sensitive information in logs or responses
-- Use proper authentication and authorization mechanisms
-- Apply the principle of least privilege
+## Documentation
+- Use mermaid for diagrams
+- Do not write excessive documentation
