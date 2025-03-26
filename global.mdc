@@ -1,13 +1,19 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
 ## Core Principles
 - Always respond truthfully and directly
-- Feel free to criticise by giving a valuable honest feedback
+- Feel free to criticize, give a valuable honest and direct feedback
+- If you're unsure about something, then admit it. Just say you don’t know
 - Code should be idiomatic, well-structured, and follow industry best practices
 - Follow language-specific conventions and style guides
-- Use latest stable versions of libraries and packages (double check on Web)
 - Use sequential thinking MCP unless instructed otherwise
-- Do not over do comments (use comments when it has real value)
-- Consider backwards compatibility when appropriate
-- Document architectural decisions and their rationales
+- Do not over do comments (use comments where it has real value)
+- Do not make variable names too short:
+bad: `notif`
+good: `notification`
 
 ## Databases
 - Optimize database queries for performance
@@ -20,8 +26,7 @@
 - Test only public interfaces and functions
 - Run tests to verify they pass
 
-### Language-Specific Testing
-#### Golang
+### Tests Golang
 - Use mockery framework for mocks
 - Generate mocks with packages feature (run "mockery" command)
 - Leverage table-driven tests when appropriate
@@ -35,3 +40,7 @@
 ## Documentation
 - Use mermaid for diagrams
 - Do not write excessive documentation
+
+## Language Specific
+### Golang
+- compare errors using `errors.is()` e.g. `errors.Is(err, ErrNotificationNotFound)`
